@@ -1,0 +1,40 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 52,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\35d61dd4-01cf-453d-ae6d-4b71673ef847.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\35d61dd4-01cf-453d-ae6d-4b71673ef847\\scratchpad",
+    "prompt_id": "fff83e1f-08c5-4afe-8a10-0c1708c2ae66",
+    "permission_mode": "default",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "*",
+      "path": "~\\AppData\\Roaming\\Claude\\side-session-notes\\[redacted]"
+    },
+    "tool_use_id": "toolu_01VQF9V2Gq8WYmYofK8LsruT"
+  }
+}

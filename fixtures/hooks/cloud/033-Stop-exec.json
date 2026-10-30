@@ -1,0 +1,38 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (linux), scrubbed",
+  "_capture": {
+    "platform": "linux",
+    "form": "exec",
+    "node": "v22.22.0",
+    "bootMs": 32,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": true,
+      "CLAUDE_CODE_REMOTE": true,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": "cse_",
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+    "transcript_path": "~/.claude/projects/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a.jsonl",
+    "cwd": "~/agent-office",
+    "scratchpad_dir": "/tmp/claude-0/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a/scratchpad",
+    "prompt_id": "b4f5b49a-2a01-48fb-af84-bdb94d00ee66",
+    "permission_mode": "auto",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "Stop",
+    "stop_hook_active": false,
+    "last_assistant_message": "done. All three steps ran, nothing committed or pushed.\n\n- **Architect:** README read. 7 \"DECISION REQUIRED\" hits in `docs/`, all already decided or not real. Only one could still come up: custom dom…",
+    "background_tasks": [],
+    "session_crons": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 43,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "980db776-b1e9-42d5-95ad-64800715e88d",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d\\scratchpad",
+    "prompt_id": "fe271e37-c425-4f53-a41d-02fe1ba3f935",
+    "permission_mode": "default",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "Stop",
+    "stop_hook_active": false,
+    "last_assistant_message": "done. The architect read README.md (private agent-team visualizer, needs Node 22.13+, code in `packages/core`, `scripts/`, `fixtures/hooks/` and `docs/`). The node command exited with code 3, as you …",
+    "background_tasks": [],
+    "session_crons": []
+  }
+}

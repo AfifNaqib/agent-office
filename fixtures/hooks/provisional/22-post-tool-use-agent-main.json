@@ -1,0 +1,33 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#agent",
+  "_notes": "Foreground Agent completion; tool_response carries the subagent result, which must be dropped.",
+  "payload": {
+    "session_id": "abc123",
+    "prompt_id": "550e8400-e29b-41d4-a716-446655440000",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "permission_mode": "default",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Agent",
+    "tool_input": {
+      "prompt": "Review docs/build-plan.md and list open questions.",
+      "description": "Review the build plan",
+      "subagent_type": "architect"
+    },
+    "tool_response": {
+      "status": "completed",
+      "agentId": "agent-arch01",
+      "content": [
+        {
+          "type": "text",
+          "text": "SUBAGENT RESULT MUST NOT LEAVE THE MACHINE"
+        }
+      ],
+      "totalDurationMs": 48211,
+      "totalToolUseCount": 3
+    },
+    "tool_use_id": "toolu_01AGENT",
+    "duration_ms": 48230
+  }
+}

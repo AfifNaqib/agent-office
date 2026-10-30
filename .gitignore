@@ -1,0 +1,36 @@
+# dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# secrets and local config (never commit)
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.local.json
+.claude/settings.local.json
+
+# local spike output (may contain raw hook payloads)
+.spike/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# installer leftovers (backups of a settings file, temp files)
+*.agent-office.*.bak
+*.agent-office-tmp-*
+
+# Playwright output
+test-results/
+playwright-report/
+
+# wrangler local state (wrangler dev / dry-run)
+.wrangler/
+
+# Agent worktrees (Claude Code isolation)
+.claude/worktrees/

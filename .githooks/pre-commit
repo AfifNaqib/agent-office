@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks commits that contain an obvious secret. Installed by `npm install`
+# (scripts/install-githooks.mjs sets core.hooksPath=.githooks).
+exec node scripts/secret-scan.mjs --staged

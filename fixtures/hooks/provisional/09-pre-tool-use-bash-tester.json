@@ -1,0 +1,22 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#bash",
+  "payload": {
+    "session_id": "abc123",
+    "prompt_id": "550e8400-e29b-41d4-a716-446655440000",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "permission_mode": "default",
+    "agent_id": "agent-test01",
+    "agent_type": "tester",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm test -- --reporter=dot",
+      "description": "Run test suite",
+      "timeout": 120000,
+      "run_in_background": false
+    },
+    "tool_use_id": "toolu_01BASH"
+  }
+}

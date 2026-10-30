@@ -1,0 +1,13 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#precompact-input",
+  "_notes": "Not in FR-001: normalize must return null.",
+  "payload": {
+    "session_id": "abc123",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "hook_event_name": "PreCompact",
+    "trigger": "manual",
+    "custom_instructions": null
+  }
+}

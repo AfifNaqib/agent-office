@@ -1,0 +1,52 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 30,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2\\scratchpad",
+    "prompt_id": "87fcc95b-c5ac-45bb-9b2a-ef3e4eb65e10",
+    "permission_mode": "auto",
+    "agent_id": "a710a7da45c6a4ac1",
+    "agent_type": "architect",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "C:\\Claude\\agent-office\\README.md"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "C:\\Claude\\agent-office\\README.md",
+        "content": "# Agent Office\n\nPrivate, single-user visualizer for the Product Owner's Claude Code agent team. See `CLAUDE.md` for the project summary and `docs/build-plan.md` for the approved plan.\n\n## Requirement…",
+        "numLines": 28,
+        "startLine": 1,
+        "totalLines": 28
+      }
+    },
+    "tool_use_id": "toolu_01UkJXkDj12T1JXLuH5UjcC8",
+    "duration_ms": 29
+  }
+}

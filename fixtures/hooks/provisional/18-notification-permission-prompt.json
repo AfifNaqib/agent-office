@@ -1,0 +1,13 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#notification-input",
+  "payload": {
+    "session_id": "abc123",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use Bash",
+    "title": "Permission needed",
+    "notification_type": "permission_prompt"
+  }
+}

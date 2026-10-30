@@ -1,0 +1,40 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 47,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\2a64f644-094b-451e-a51c-0280d2a37d7d.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\2a64f644-094b-451e-a51c-0280d2a37d7d\\scratchpad",
+    "prompt_id": "17760fde-f271-4194-a4c6-545965e171a4",
+    "permission_mode": "default",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "node -e \"process.exit(3)\"",
+      "description": "Run Node script that exits with code 3"
+    },
+    "tool_use_id": "toolu_01U8hrDRuEpb1Js9h52kYZhv"
+  }
+}

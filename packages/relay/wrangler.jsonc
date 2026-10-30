@@ -1,0 +1,45 @@
+// Relay Worker (plan §9, V1-01). Host: agent-office.<your-subdomain>.workers.dev (A3.6 D1).
+// No secrets here. Secrets are set with `npm run relay:wrangler -- secret put <NAME>`
+// (see docs/setup-cloudflare.md; `npm run secrets:check` lists which are set):
+//   INGEST_TOKEN  write-only token for POST /ingest (cloud network secret adds it as
+//                 "Authorization: Bearer <token>"); 32+ chars, from scripts/gen-token.mjs.
+//   ACCESS_TEAM_DOMAIN  <team>.cloudflareaccess.com (Access JWT issuer + certs, V1-02)
+//   ACCESS_AUD          AUD tag of the "agent-office - Cloudflare Workers" Access app (V1-02)
+//   BRIDGE_TOKEN  token of the PC bridge's GET /bridge WebSocket (V1-04); 32+ chars, from
+//                 scripts/gen-token.mjs; the PC keeps it in %USERPROFILE%\.agent-office\config.json.
+// Access settings missing or malformed -> every path except /ingest and /bridge answers 503;
+// INGEST_TOKEN / BRIDGE_TOKEN missing -> that path answers 503 (fails closed).
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "agent-office",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-15",
+  "workers_dev": true,
+  // core is bundled from source (no build step needed for packages/core).
+  "alias": {
+    "@agent-office/core": "../core/src/index.ts"
+  },
+  // The office web app (V1-05): packages/web/dist, built by `npm run deploy:relay`
+  // (and by the relay `build` script) before wrangler reads it.
+  // run_worker_first: true = every request runs the Worker first, so the Access
+  // guard checks the JWT before any file is served; the runtime never serves an
+  // asset on its own. Only src/routes/assets.ts reads the ASSETS binding (/ and /assets/<name>).
+  "assets": {
+    "directory": "../web/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  // One SQLite-backed Durable Object holds everything (single user, plan §5).
+  "durable_objects": {
+    "bindings": [{ "name": "HUB", "class_name": "OfficeHub" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["OfficeHub"] }],
+  // Not secret. The Access JWT's email must be in this comma-separated list (plan D1:
+  // the owner's email only), on top of the Access policy itself.
+  // Set this to your Access login email before deploying.
+  "vars": {
+    "ACCESS_ALLOWED_EMAILS": "you@example.com"
+  }
+}

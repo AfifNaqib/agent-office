@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "noEmit": true,
+    "declaration": false,
+    "sourceMap": false,
+    "paths": {
+      "@agent-office/core": ["../../core/src/index.ts"]
+    }
+  },
+  "include": [".", "../src"],
+  "exclude": ["../src/hub.ts", "../src/hubClient.ts", "../src/worker.ts", "workerd"]
+}

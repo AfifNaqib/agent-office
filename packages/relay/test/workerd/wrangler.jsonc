@@ -1,0 +1,31 @@
+// TEST ONLY, never deploy. Used by test/workerd-ws.test.ts through
+// `wrangler dev --config test/workerd/wrangler.jsonc` (local workerd).
+// Same Worker and Durable Object as ../../wrangler.jsonc, but the entry
+// (./entry.ts) verifies Access JWTs against a key set passed in as the
+// TEST_ACCESS_JWKS var instead of the team certs URL, so the tests can sign
+// real RS256 JWTs offline. `npm run deploy:relay` only ever uses ../../wrangler.jsonc.
+{
+  "$schema": "../../../../node_modules/wrangler/config-schema.json",
+  "name": "agent-office-test-only",
+  "main": "entry.ts",
+  "compatibility_date": "2026-10-15",
+  "workers_dev": false,
+  "alias": {
+    "@agent-office/core": "../../../core/src/index.ts"
+  },
+  // Same assets setup as the real config (V1-05): the web build, Worker first.
+  "assets": {
+    "directory": "../../../web/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "HUB", "class_name": "OfficeHub" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["OfficeHub"] }],
+  "vars": {
+    "ACCESS_ALLOWED_EMAILS": "you@example.com"
+  }
+}

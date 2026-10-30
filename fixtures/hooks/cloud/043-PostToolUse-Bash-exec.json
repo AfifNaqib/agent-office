@@ -1,0 +1,48 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (linux), scrubbed",
+  "_capture": {
+    "platform": "linux",
+    "form": "exec",
+    "node": "v22.22.0",
+    "bootMs": 26,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": true,
+      "CLAUDE_CODE_REMOTE": true,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": "cse_",
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+    "transcript_path": "~/.claude/projects/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a.jsonl",
+    "cwd": "~/agent-office",
+    "scratchpad_dir": "/tmp/claude-0/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a/scratchpad",
+    "prompt_id": "e114458a-ffff-48b5-a5e5-7db5544b398a",
+    "permission_mode": "auto",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git status --short | head; ls .spike/s2/linux 2>&1 | head; ls scripts/ | grep -i spike; ls fixtures/hooks 2>&1",
+      "description": "Check repo state and spike paths"
+    },
+    "tool_response": {
+      "stdout": "[redacted]-SessionStart.json\n[redacted]-SessionStart.json\n[redacted].json\n[redacted].json\n[redacted]-PreToolUse.json\n[redacted]-PreToolUse.json\n[redacted]-PreToolUse.json\n[redacted]-PostToolUse.json\n…",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01G7XpAsmo6Hhp2hyxTNDGcu",
+    "duration_ms": 137
+  }
+}

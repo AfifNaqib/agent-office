@@ -1,0 +1,46 @@
+{
+  "name": "agent-office",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Live isometric office that visualises a Claude Code agent team from hooks.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "node scripts/install-githooks.mjs",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "npm run build --workspaces --if-present",
+    "secret-scan": "node scripts/secret-scan.mjs",
+    "gen-token": "node scripts/gen-token.mjs",
+    "bridge": "npm run start -w @agent-office/bridge",
+    "web": "npm run dev -w @agent-office/web",
+    "setup:pc": "node scripts/setup-pc.mjs",
+    "install-hooks": "node scripts/install-hooks.mjs",
+    "secrets:check": "node scripts/secrets-check.mjs",
+    "deploy:relay": "node scripts/deploy-relay.mjs",
+    "relay:wrangler": "node scripts/relay-wrangler.mjs",
+    "test:e2e": "npm run build && playwright test -c packages/web/playwright.config.ts"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.20.5",
+    "@vitest/coverage-v8": "^5.0.5",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  }
+}

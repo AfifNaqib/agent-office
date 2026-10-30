@@ -1,0 +1,46 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (linux), scrubbed",
+  "_capture": {
+    "platform": "linux",
+    "form": "exec",
+    "node": "v22.22.0",
+    "bootMs": 38,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": true,
+      "CLAUDE_CODE_REMOTE": true,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": "cse_",
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+    "transcript_path": "~/.claude/projects/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a.jsonl",
+    "cwd": "~/agent-office",
+    "scratchpad_dir": "/tmp/claude-0/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a/scratchpad",
+    "prompt_id": "b4f5b49a-2a01-48fb-af84-bdb94d00ee66",
+    "permission_mode": "auto",
+    "agent_id": "a1d0f42ffe7d14f60",
+    "agent_type": "architect",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "SubagentHandback",
+    "tool_input": {
+      "message": "README: private single-user visualizer for PO's Claude Code agent team. Node 22.13+, npm scripts (lint, typecheck, test, coverage, build, secret-scan, gen-token). Layout: packages/core, scripts/, fix…"
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Report delivered to your caller."
+    },
+    "tool_use_id": "toolu_01GrVmSMvnE4zRMvwy1ohmWh",
+    "duration_ms": 54
+  }
+}

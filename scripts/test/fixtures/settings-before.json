@@ -1,0 +1,20 @@
+{
+  "model": "opus",
+  "permissions": {
+    "allow": ["Bash(ls:*)"],
+    "deny": ["Read(./.env)"]
+  },
+  "env": { "FOO": "1" },
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "powershell", "args": ["-File", "C:\\tools\\beep.ps1"] }] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Bash", "hooks": [{ "type": "command", "command": "node", "args": ["C:\\tools\\audit.mjs"] }] }
+    ],
+    "PostCompact": [
+      { "hooks": [{ "type": "command", "command": "echo", "args": ["compacted"] }] }
+    ]
+  },
+  "statusLine": { "type": "command", "command": "echo hi" }
+}

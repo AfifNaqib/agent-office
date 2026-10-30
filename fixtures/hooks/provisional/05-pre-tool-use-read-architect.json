@@ -1,0 +1,22 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#read",
+  "_notes": "agent_id/agent_type on a tool event inside a subagent: documented under Common input fields, not yet observed (S2 question).",
+  "payload": {
+    "session_id": "abc123",
+    "prompt_id": "550e8400-e29b-41d4-a716-446655440000",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "permission_mode": "default",
+    "agent_id": "agent-arch01",
+    "agent_type": "architect",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/home/user/my-project/docs/build-plan.md",
+      "offset": 1,
+      "limit": 200
+    },
+    "tool_use_id": "toolu_01READ"
+  }
+}

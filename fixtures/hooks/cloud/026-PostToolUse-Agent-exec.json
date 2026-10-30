@@ -1,0 +1,110 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (linux), scrubbed",
+  "_capture": {
+    "platform": "linux",
+    "form": "exec",
+    "node": "v22.22.0",
+    "bootMs": 72,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": true,
+      "CLAUDE_CODE_REMOTE": true,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": "cse_",
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+    "transcript_path": "~/.claude/projects/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a.jsonl",
+    "cwd": "~/agent-office",
+    "scratchpad_dir": "/tmp/claude-0/-home-user-agent-office/d8758a32-674c-5b60-a525-e6c6cd9e4c0a/scratchpad",
+    "prompt_id": "b4f5b49a-2a01-48fb-af84-bdb94d00ee66",
+    "permission_mode": "auto",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Agent",
+    "tool_input": {
+      "description": "Read README, grep decisions",
+      "prompt": "Read ~/agent-office/README.md and grep ~/agent-office/docs/ for \"DECISION REQUIRED\". Report briefly: README gist (2-3 lines) and each DECISION REQUIRED match with file:line. Do not modify anything.",
+      "subagent_type": "architect",
+      "run_in_background": false
+    },
+    "tool_response": {
+      "status": "completed",
+      "prompt": "Read ~/agent-office/README.md and grep ~/agent-office/docs/ for \"DECISION REQUIRED\". Report briefly: README gist (2-3 lines) and each DECISION REQUIRED match with file:line. Do not modify anything.",
+      "agentId": "a1d0f42ffe7d14f60",
+      "agentType": "architect",
+      "handback": "send",
+      "handbackReport": {
+        "text": "README: private single-user visualizer for PO's Claude Code agent team. Node 22.13+, npm scripts (lint, typecheck, test, coverage, build, secret-scan, gen-token). Layout: packages/core, scripts/, fix…"
+      },
+      "harnessNoteCount": 1,
+      "harnessTailCount": 0,
+      "harnessSectionHash": "74dcc2ca106b5662",
+      "content": [
+        {
+          "type": "text",
+          "text": "This agent's report was delivered to you as a message from \"a1d0f42ffe7d14f60\" (its SubagentHandback call). Read it there; it is not repeated here.\n"
+        }
+      ],
+      "resolvedModel": "claude-opus-5-5",
+      "totalDurationMs": 12972,
+      "totalTokens": 16525,
+      "totalToolUseCount": 4,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 281,
+        "cache_read_input_tokens": 15720,
+        "output_tokens": 522,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 281
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 522,
+            "cache_read_input_tokens": 15720,
+            "cache_creation_input_tokens": 281,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 281,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "toolStats": {
+        "readCount": 2,
+        "searchCount": 1,
+        "bashCount": 0,
+        "editFileCount": 0,
+        "linesAdded": 0,
+        "linesRemoved": 0,
+        "otherToolCount": 1
+      },
+      "canContinueAgent": true
+    },
+    "tool_use_id": "toolu_01QSjyqhCSS3aE1dMdgd8X49",
+    "duration_ms": 12974
+  }
+}

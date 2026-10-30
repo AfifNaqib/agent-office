@@ -1,0 +1,2854 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`contract cloud/001-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "5f9dc0b2d245f726777a4fca5ac732c0d5fe4c3846b7209785cbdc4ca9552fe1",
+  "kind": "session.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/002-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "5f9dc0b2d245f726777a4fca5ac732c0d5fe4c3846b7209785cbdc4ca9552fe1",
+  "kind": "session.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/003-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fcff3670a84817f76c3f42eff6c27786ea850c831af8b36e80fcb08305a9d203",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "Use the **architect** subagent to read \`README.md\` and grep \`docs/\` for "DECISION REQUIRED". Then use the **tester** subagent to run \`node --version\` and then \`node -e "process.exit(3)"\` with Bash (t…",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/004-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fcff3670a84817f76c3f42eff6c27786ea850c831af8b36e80fcb08305a9d203",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "Use the **architect** subagent to read \`README.md\` and grep \`docs/\` for "DECISION REQUIRED". Then use the **tester** subagent to run \`node --version\` and then \`node -e "process.exit(3)"\` with Bash (t…",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/005-PreToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fe99173630887645c10cc4ccdc5f5a789da0f59a5cafa7951cbbc4b2845403ba",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Agent",
+    "summary": "architect: Read README, grep decisions",
+    "useId": "toolu_01QSjyqhCSS3aE1dMdgd8X49",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/006-PreToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9aba174fcddfc3e6f9143c4d800edc67eb9bfe02791ed7a7a8552c71e036b395",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Agent",
+    "summary": "tester: Run two node commands",
+    "useId": "toolu_015XwHBnrjptJX1AnyEGjAk8",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/007-PreToolUse-ToolSearch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "b9bf6d77b151509f668eb252e4c54d4405e2cf08eee9967a105e1a41e1ca8e24",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "ToolSearch",
+    "summary": "select:WebFetch",
+    "useId": "toolu_01EnKw6fACmtrCQHrNyMjWKq",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/008-PostToolUse-ToolSearch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "41680ea0371f0521b8f85663af5f5f326fce60ebd449d8735d0e44431a0eb569",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 4,
+    "name": "ToolSearch",
+    "summary": "select:WebFetch",
+    "useId": "toolu_01EnKw6fACmtrCQHrNyMjWKq",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/009-SubagentStart-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "bb553317742102c172f34b4e652a389d9c704f92b56eace91bfd14a04df01e7a",
+  "kind": "agent.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/010-SubagentStart-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "d311bb5c7f106874a198bd9756480ab2561c17c86822d148fdae91920740bd38",
+  "kind": "agent.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/011-PreToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "5f215bec38188fe3a786f5768b922157eea3daed1264117db1da6d2a7e056d04",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_01J1U1qJAeisTzUmC4g8ZU39",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/012-PostToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "8821887d2744cc2e568d6f8edced4343082ec3bdc8081749bd0684006061a383",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 5,
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_01J1U1qJAeisTzUmC4g8ZU39",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/013-PreToolUse-Bash-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "2181afa738fa405091995a6e60b149d3769e8811c6c8c37752d02827448b57cd",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Bash",
+    "summary": "node --version;",
+    "useId": "toolu_01Bqda88q5ckyXt6wsXnjDZB",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/014-PreToolUse-Grep-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "df9ccc268a24a9abffc914b480d809eb8cc99884b9115ff2950f155333f48962",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Grep",
+    "summary": "DECISION REQUIRED",
+    "useId": "toolu_01GFfgSnazXJ8P2o26KBuQZt",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/015-PostToolUse-Grep-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "998361b932c56ea34eadfc23d5e6605d15b3fc55f7e48afaa45e02e2115c49f2",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 36,
+    "name": "Grep",
+    "summary": "DECISION REQUIRED",
+    "useId": "toolu_01GFfgSnazXJ8P2o26KBuQZt",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/016-PostToolUse-Bash-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "eb610dd160d7c57de523cd15844c29b4cd5b53bb27f8072f2123eb5b8574e20d",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 277,
+    "name": "Bash",
+    "summary": "node --version;",
+    "useId": "toolu_01Bqda88q5ckyXt6wsXnjDZB",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/017-PreToolUse-SubagentHandback-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "5d4f43edda13f8e9316fd71575b80f2993c395b1f824bb9b22b3ec2c0531ae95",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_0182h6eJ9WkRzxueT2Yo9335",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/018-PreToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1cd043111b78f78255cb64549a754dba9b998232b862cf34e6ce3003558b1a0a",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Read",
+    "summary": "docs/build-plan.md",
+    "useId": "toolu_015A3wYM5NEvVvQjAVBP4Fz3",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/019-PostToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "11fc1f95d350743c113012ba5bd7998b73e6ab3841cc64ed117f59bee50fdeab",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 37,
+    "name": "Read",
+    "summary": "docs/build-plan.md",
+    "useId": "toolu_015A3wYM5NEvVvQjAVBP4Fz3",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/020-SubagentStop-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "8ee7c87f6dea2541d39a8ac1ce2195fca13766df40d6bcc1aa4757a24d95be46",
+  "kind": "agent.stop",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/021-PostToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "66c11dbcf2eca2030abd5ee362e1b7a89c83c322d14a50ac88b92b0b9828f683",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 6686,
+    "name": "Agent",
+    "summary": "tester: Run two node commands",
+    "useId": "toolu_015XwHBnrjptJX1AnyEGjAk8",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/022-PostToolUse-SubagentHandback-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a198c2e5891746f5b",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "20dfff037dafbf09803ec3d5ca9a3dbf661fb1ed6b536062d5b7d26753d9878e",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 76,
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_0182h6eJ9WkRzxueT2Yo9335",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/023-PreToolUse-SubagentHandback-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6175aed975c0a8e305b8e7959466816c08fcd482aaddb6da5d4cf84737aebec3",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_01GrVmSMvnE4zRMvwy1ohmWh",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/024-PostToolUse-SubagentHandback-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "af8ce0899833893c50369d998b283b385a1e5f5f4f60040e699caafb1b297b4f",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 54,
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_01GrVmSMvnE4zRMvwy1ohmWh",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/025-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "473fda26014dadf2af852894d88ccab4e0f5d7c44c5ba30e8c87b180ca9662ce",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/026-PostToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "ad646d06cf618dd73cc8de8d2df439de7fd0bc2013dd55dcfd056751685ae34b",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 12974,
+    "name": "Agent",
+    "summary": "architect: Read README, grep decisions",
+    "useId": "toolu_01QSjyqhCSS3aE1dMdgd8X49",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/027-SubagentStop-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a1d0f42ffe7d14f60",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "3f3ce55dd19f59aa3db07df5c2e8d53707e411c0e3d2e0838def8b3ab86d8eae",
+  "kind": "agent.stop",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/028-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "94491b8b75f4f223b880aec230a679de085f6778e9ec400fc4a7322c8e186884",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/029-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "473fda26014dadf2af852894d88ccab4e0f5d7c44c5ba30e8c87b180ca9662ce",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/030-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "94491b8b75f4f223b880aec230a679de085f6778e9ec400fc4a7322c8e186884",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/031-PreToolUse-WebFetch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "8356500c64863aff2f6eb36477dfe9721a5c20daf54be63dd45fcc63b60754c2",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "WebFetch",
+    "summary": "code.claude.com",
+    "useId": "toolu_013ZQeYNpBpRkTajB4jynMjW",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/032-PostToolUse-WebFetch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9bcaf4d21926c65166124796dad0c324e32dae67b0bca893a56e44bf98cd41cd",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 3123,
+    "name": "WebFetch",
+    "summary": "code.claude.com",
+    "useId": "toolu_013ZQeYNpBpRkTajB4jynMjW",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/033-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "32fd64c55c4b88b20ef7847e9b299568368abc989385f18f2efc9c55fbd68567",
+  "kind": "turn.stop",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "done. All three steps ran, nothing committed or pushed.
+
+- **Architect:** README read. 7 "DECISION REQUIRED" hits in \`docs/\`, all already decided or not real. Only one could still come up: custom dom…",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/035-SessionEnd-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f9b2e25ee57d55682616b63180fe131e346c6b4d2bafde394f9c7b85716298d9",
+  "kind": "session.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/036-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "23ed3a7c3547d32e275d8b85bef1b133a727f84f8c721f3680f7eb31118386f9",
+  "kind": "session.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/037-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "23ed3a7c3547d32e275d8b85bef1b133a727f84f8c721f3680f7eb31118386f9",
+  "kind": "session.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/038-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f266105e8c9870c626ccbd191b5d57e864c04248ebbe58ef76c7d0c49d16a0e7",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<task-notification",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/039-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f266105e8c9870c626ccbd191b5d57e864c04248ebbe58ef76c7d0c49d16a0e7",
+  "kind": "prompt.submit",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "text": "<task-notification",
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/040-PreToolUse-ReadNotifications-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1fa56d3e53a6f229a07c53310bd75208be038379757fe581f17549e9f00eae7d",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "ReadNotifications",
+    "summary": "",
+    "useId": "toolu_01PXr9FcLgqaLZ9U5LBBA7vq",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/041-PostToolUse-ReadNotifications-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "097d2ea2824a3dc74a3b32f07388b1575c661df59a8644520c50b20374f88fec",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 4,
+    "name": "ReadNotifications",
+    "summary": "",
+    "useId": "toolu_01PXr9FcLgqaLZ9U5LBBA7vq",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/042-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "96871f885ee8c8e4eaeb9cb5652a56a44cbadb8ad4f1c625445cadf6e4d7b69d",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Bash",
+    "summary": "git status",
+    "useId": "toolu_01G7XpAsmo6Hhp2hyxTNDGcu",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/043-PostToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fd8f8c0024977490f003116a35cd6aa6558185b6e6573457510edf9e4315f538",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 137,
+    "name": "Bash",
+    "summary": "git status",
+    "useId": "toolu_01G7XpAsmo6Hhp2hyxTNDGcu",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/044-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "18242a62e176773fbb90d6dd10a5801a322092f085447700197c079542ca9add",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Bash",
+    "summary": "sed -n",
+    "useId": "toolu_01PiVFpqg7tcyzkzWqNoavok",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/045-PostToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9051b808e44cffe7272e75a46a4a6ea9e828ac3a8321792c2963e7cd0f019fe3",
+  "kind": "tool.end",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "durationMs": 39,
+    "name": "Bash",
+    "summary": "sed -n",
+    "useId": "toolu_01PiVFpqg7tcyzkzWqNoavok",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract cloud/046-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "09d1b283cfaca18c468515d5dd54deb1ffcc867bcbe8d4558f450e37465c503e",
+  "kind": "tool.start",
+  "remoteSessionId": "cse_01AbCdEfGhIjKlMnOpQrStUv",
+  "repo": "agent-office",
+  "sessionId": "d8758a32-674c-5b60-a525-e6c6cd9e4c0a",
+  "source": "cloud",
+  "tool": {
+    "name": "Bash",
+    "summary": "npm ci",
+    "useId": "toolu_01QYai4vd9Pnyszq68KmHogk",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/001-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "89535573a02bc1b043c1dcdcf80bf065717fc3be6f6b71b180bede7a34125326",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/002-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "89535573a02bc1b043c1dcdcf80bf065717fc3be6f6b71b180bede7a34125326",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/003-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "4160fdfaece52b145a318f9f61a04b0497b1a3772fdd355da2ff3e58a71ca573",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "Use the architect subagent to read README.md and grep docs/ for “DECISION REQUIRED”. Then use the tester subagent to run node --version and then node -e "process.exit(3)" with Bash (the second one fa…",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/004-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "4160fdfaece52b145a318f9f61a04b0497b1a3772fdd355da2ff3e58a71ca573",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "Use the architect subagent to read README.md and grep docs/ for “DECISION REQUIRED”. Then use the tester subagent to run node --version and then node -e "process.exit(3)" with Bash (the second one fa…",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/005-PreToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "afef552cc2fda8be23a0213e0444e7a40a241842976fc185a7e6beaac0f04dd8",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "Agent",
+    "summary": "architect: Read README, grep decisions",
+    "useId": "toolu_016tVbpAFkpwE2s4mGiKDCd1",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/006-PreToolUse-ToolSearch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9e9ffee6d49c380958a08edd2086e17657f5c3aa8c20137d6d87a5d6e9caef5b",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "ToolSearch",
+    "summary": "select:WebFetch",
+    "useId": "toolu_017ApwRxfSBcM2Ko5kea6Xxe",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/007-PostToolUse-ToolSearch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "53b43c45e5150b5fd6d8886465c2e8d18d03c25f0f8592256817423ebf591070",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 2,
+    "name": "ToolSearch",
+    "summary": "select:WebFetch",
+    "useId": "toolu_017ApwRxfSBcM2Ko5kea6Xxe",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/008-SubagentStart-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "97d1f4bf659f78b9bcb4b914900a0dc250b73cbf2c000e223ce70660fda50807",
+  "kind": "agent.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/009-PostToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "613b04cf96a91dc4b619d8eff98fe686bb7acbbbb036be8d2b3a4f1c8cd29280",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 12,
+    "name": "Agent",
+    "summary": "architect: Read README, grep decisions",
+    "useId": "toolu_016tVbpAFkpwE2s4mGiKDCd1",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/010-PreToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "e7394b9e7e0900d66080c8f59d05261b5a907c68dc6633f9c1ea2dca9cd360f9",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_01UkJXkDj12T1JXLuH5UjcC8",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/011-PostToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "e47726cb469c74c453e616b6522bd9488a634ca47d5682fe2aec901ee58960eb",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 29,
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_01UkJXkDj12T1JXLuH5UjcC8",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/012-PreToolUse-Grep-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6dde3c15f1962cf513beba2bdc962a5e31d1940d9d3a9e9a1bbd943ea2f89f02",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "Grep",
+    "summary": "DECISION REQUIRED",
+    "useId": "toolu_01Er4Xr8z61XUg6WEFAfqjWM",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/013-PostToolUse-Grep-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "493ac317173c1f882b17ed6d38d23b78056b5db53c509e8f0b76ffeba351a2ee",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 1206,
+    "name": "Grep",
+    "summary": "DECISION REQUIRED",
+    "useId": "toolu_01Er4Xr8z61XUg6WEFAfqjWM",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/014-PreToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fadb8da51f511f0c23692bb4b403485e51d739036607d5309fb87eee2278a869",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "Agent",
+    "summary": "tester: Run two node commands",
+    "useId": "toolu_01MABYKRSqnS7SHRpBpzHTsy",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/015-PreToolUse-WebFetch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "83b207c19022910af35acddba39d556b176ee5e6245141102f85c924c68a5a85",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "WebFetch",
+    "summary": "code.claude.com",
+    "useId": "toolu_01NyPfhJCz1XQ8J8nmmUaUWL",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/016-SubagentStart-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6300b5c3c3ded93e08a4ddd1422b0340f7d1f1fb54ca897f4680383b04913cdb",
+  "kind": "agent.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/017-PostToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "33bbaecef136bf260d33c0f2b73516a22d7c891383c0da05b7f4c4225713f6e9",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 8,
+    "name": "Agent",
+    "summary": "tester: Run two node commands",
+    "useId": "toolu_01MABYKRSqnS7SHRpBpzHTsy",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/018-PreToolUse-Bash-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "0ba6bcbcf0f3f0582b6710928e9bb4a1d6180520967842c45bdf4110dfb825e0",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "Bash",
+    "summary": "node --version;",
+    "useId": "toolu_013uebXMgPwWr7weddD2bTfZ",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/019-PreToolUse-SubagentHandback-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "8a741ea325ec254e814ea359b05c31d5839ec8cc5ed4de9f2fd3b8e9ceb28275",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_01UpBbK9dfKn2MBsHMsLjq6S",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/020-PostToolUse-SubagentHandback-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "15b2cc382b284f916e9390b89ec367df7b35d600dd58d82c8aab02768ca19bc2",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 37,
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_01UpBbK9dfKn2MBsHMsLjq6S",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/021-SubagentStop-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a710a7da45c6a4ac1",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "92f745f3387527767827551af099b90bfcf95d12e64b608e177e045b7f4277f9",
+  "kind": "agent.stop",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/022-PostToolUse-WebFetch-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "0b3b8e394f01a1c1c1cc0097d61cbc7270ff79cb6146992a4a77622cc0a32e4c",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 6148,
+    "name": "WebFetch",
+    "summary": "code.claude.com",
+    "useId": "toolu_01NyPfhJCz1XQ8J8nmmUaUWL",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/023-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "224d63464715ce15c5ebd23479659a372d22a11962c54b0928c508f1afeeabcc",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/024-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "224d63464715ce15c5ebd23479659a372d22a11962c54b0928c508f1afeeabcc",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/025-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9c81a8ca9fd4a2f43d678d5bae5aed781f917a985cdc8aae9764cc6a43b76d9d",
+  "kind": "turn.stop",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "Architect's done. Waiting on the tester.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/027-PostToolUse-Bash-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "22ffc5c7ed4a9d3389bfba538bbe01ed75c8e974c0ce8fae3377f64201d4cfe3",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 12282,
+    "name": "Bash",
+    "summary": "node --version;",
+    "useId": "toolu_013uebXMgPwWr7weddD2bTfZ",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/028-PreToolUse-SubagentHandback-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6643ef8543abd933485f35b006bc00f631b68fac4aef4bc6a3f54addd65deaa5",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_014KoySpaAwEuzTyTW1gcMyB",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/029-PostToolUse-SubagentHandback-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6cbf1d15c0296675bd29418f680441a9913f3949b0e69f31d9bffbf73d9a380c",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "tool": {
+    "durationMs": 21,
+    "name": "SubagentHandback",
+    "summary": "",
+    "useId": "toolu_014KoySpaAwEuzTyTW1gcMyB",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc/030-SubagentStop-tester-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a95ded7a9e1d0e9db",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "6c580c001859884290d1040165725e2300cf806b93587ba56a669fd9034e9abd",
+  "kind": "agent.stop",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/031-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "ee6eb01b0ea75a02cfc6d4aaff9b3263f97c5fc67409374aaa2e21e0e8780a50",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/032-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "ee6eb01b0ea75a02cfc6d4aaff9b3263f97c5fc67409374aaa2e21e0e8780a50",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "<agent-message",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/033-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "08be854ea45851780f8ebb41b42c2feb9bb0fa1037659691a38d8d55bc357882",
+  "kind": "turn.stop",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "text": "done",
+  "v": 1,
+}
+`;
+
+exports[`contract pc/035-SessionEnd-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "98e6139523c58a281f05320c8a12791e4d6c946f357bf62f1cdc7f116688422b",
+  "kind": "session.end",
+  "repo": "agent-office",
+  "sessionId": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/001-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9232d2d1d4c4f6c44b750a9c109af79ec0d3bb57696209f9daaf1e49e054e6c3",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/002-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9232d2d1d4c4f6c44b750a9c109af79ec0d3bb57696209f9daaf1e49e054e6c3",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/003-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f7b0826a2a0d216546bbf5e46eea8c8e702f7039fda6a345ed061ef6b6f9396e",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/004-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f7b0826a2a0d216546bbf5e46eea8c8e702f7039fda6a345ed061ef6b6f9396e",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/005-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "a8129560ec85022555c2c908480496e401e91778ca63f1c4ec5bdaf247a66aad",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "text": "Background (from the session that started this one)",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/006-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "a8129560ec85022555c2c908480496e401e91778ca63f1c4ec5bdaf247a66aad",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "text": "Background (from the session that started this one)",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/007-PreToolUse-Glob-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "30bad7860b94bf186fe57dfdf6197b67cfcf5a2d973050dfbbf019726cfd6f23",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "tool": {
+    "name": "Glob",
+    "summary": "*",
+    "useId": "toolu_01VQF9V2Gq8WYmYofK8LsruT",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/008-PostToolUse-Glob-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "878655758342d2928f3fb2ddf2f52f1921eec73d58715e5fb61d113cfdf06b6d",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "tool": {
+    "durationMs": 1299,
+    "name": "Glob",
+    "summary": "*",
+    "useId": "toolu_01VQF9V2Gq8WYmYofK8LsruT",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/009-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1947c821b0408fcac54aaef87b051a5d32007d68fd5a725e6311541e1ccceaec",
+  "kind": "turn.stop",
+  "repo": "agent-office",
+  "sessionId": "35d61dd4-01cf-453d-ae6d-4b71673ef847",
+  "source": "local",
+  "text": "I read the project's \`CLAUDE.md\` and \`MEMORY.md\`. Both already exist, so I created nothing and changed nothing. The shared notes folder is empty.
+
+You're on branch \`spike/s2-capture\` and it's clean. …",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/010-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1091f455002e29af5032e0169fd412aeaf1b70ac61175cb9437f3798fb8c0a34",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "Use the architect subagent to read README.md. Then use Bash to run node -e "process.exit(3)" as its own command (it fails on purpose). Then reply “done”.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/011-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1091f455002e29af5032e0169fd412aeaf1b70ac61175cb9437f3798fb8c0a34",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "Use the architect subagent to read README.md. Then use Bash to run node -e "process.exit(3)" as its own command (it fails on purpose). Then reply “done”.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/012-PreToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "bc8700ec6cbb5292ed722fea1857e555fc34cbbb5a49142e1ef673742c0586f1",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "tool": {
+    "name": "Agent",
+    "summary": "architect: Read README.md",
+    "useId": "toolu_016JApTvSCqePjwgZRN3F8Rt",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/013-SubagentStart-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a8c022657563c20d9",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "b3ba97bea014655609c6dbc642ee1e511c2c381c4eda181b6d654b6721ec5bc2",
+  "kind": "agent.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/014-PostToolUse-Agent-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f92f05c000e731c3ef4a31acbde6cb7287708e3038a2f6ef3fa24c62094c5802",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "tool": {
+    "durationMs": 30,
+    "name": "Agent",
+    "summary": "architect: Read README.md",
+    "useId": "toolu_016JApTvSCqePjwgZRN3F8Rt",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/015-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "2a4b8fecd784dc08e9addc5c5ca937d109a986fbdd31b3195d6cf7fa572340da",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "tool": {
+    "name": "Bash",
+    "summary": "node -e",
+    "useId": "toolu_01Us5TbSy7t4oS8YwczefhVE",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/016-PermissionRequest-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "67d8361a3350a0f26f36abfcfd62c748dc85a4728d3e36d4a7028d7a9b283a57",
+  "kind": "permission.request",
+  "permission": {
+    "requestId": "67d8361a3350a0f26f36abfcfd62c748dc85a4728d3e36d4a7028d7a9b283a57",
+    "summary": "node -e",
+    "toolName": "Bash",
+  },
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/017-PreToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a8c022657563c20d9",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "3320354c4f0e36bed34225790a5c67fcf2a6b92b0d42da336b4833f02bbd0d29",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "tool": {
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_013ZFpYLzNVSTX9BYY1Bz9La",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/018-PostToolUse-Read-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a8c022657563c20d9",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "55629e16af77d11ad17ed337788e31dcb35b427c87d457b31d876b4776e8c5a3",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "tool": {
+    "durationMs": 36,
+    "name": "Read",
+    "summary": "README.md",
+    "useId": "toolu_013ZFpYLzNVSTX9BYY1Bz9La",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/019-SubagentStop-architect-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "a8c022657563c20d9",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1684db91971b392f459ce578275754c209db5338107bab5db59028e4bdbc442a",
+  "kind": "agent.stop",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "- Agent Office is a private visualizer for your Claude Code agent team. The overview is in \`CLAUDE.md\` and the approved plan is \`docs/build-plan.md\`.
+- It needs Node 22.13+ and npm. The npm scripts c…",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/020-Notification-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "da4fe99cb912427f1f8ebd833a59d3a58fefcc322196ed3a0dd24395368f5b84",
+  "kind": "notification",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "Claude needs your permission",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/021-PostToolUseFailure-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "ff84034e65cd4f46d0b0a3f3c5cd01da57bcb3d720d6dcb4574aa2a8c3d81f45",
+  "kind": "tool.fail",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "Exit code 3",
+  "tool": {
+    "durationMs": 2668,
+    "name": "Bash",
+    "summary": "node -e",
+    "useId": "toolu_01Us5TbSy7t4oS8YwczefhVE",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/022-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f0f7880676fc4ae3794fdd726f72331849dbeae953af93aee13e23a70c3d2331",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "<task-notification",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/023-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f0f7880676fc4ae3794fdd726f72331849dbeae953af93aee13e23a70c3d2331",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "<task-notification",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/024-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "7e2ea9325b1c6ee3e9861011c73be40899953349ca5a37743f08f2406ee2ac4d",
+  "kind": "turn.stop",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "text": "done. The architect read README.md (private agent-team visualizer, needs Node 22.13+, code in \`packages/core\`, \`scripts/\`, \`fixtures/hooks/\` and \`docs/\`). The node command exited with code 3, as you …",
+  "v": 1,
+}
+`;
+
+exports[`contract pc-desktop/026-SessionEnd-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "c6cc04a30a274b535d5368c3d28cd288f447b710af41958ade8956766e7bff95",
+  "kind": "session.end",
+  "repo": "agent-office",
+  "sessionId": "980db776-b1e9-42d5-95ad-64800715e88d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/001-SessionStart-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "df0d29d78aa7ac8fcdd0a3676142f4e2a1905dd153029c84dcb9ecabbddde356",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/002-SessionStart-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "df0d29d78aa7ac8fcdd0a3676142f4e2a1905dd153029c84dcb9ecabbddde356",
+  "kind": "session.start",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/003-UserPromptSubmit-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "05a8f22d415b0d361f12e1b91942f4fbcac2e3beb9ab27a3101864aba1b5761e",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "text": "Use Bash to run node --version. Then use Bash to run node -e "process.exit(3)" as its own separate command. Then reply “done”.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/004-UserPromptSubmit-shell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "05a8f22d415b0d361f12e1b91942f4fbcac2e3beb9ab27a3101864aba1b5761e",
+  "kind": "prompt.submit",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "text": "Use Bash to run node --version. Then use Bash to run node -e "process.exit(3)" as its own separate command. Then reply “done”.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/005-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "2a2b405bcb2beaa73cd4809d5c67b5dea18f1b986c8fc51371baca80d46fe177",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "tool": {
+    "name": "Bash",
+    "summary": "node --version",
+    "useId": "toolu_01DdEU8Dh9Y4doP5hMJPCiY4",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/006-PostToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "13fd0e1f3ce58a790decb5dacbe52010a9107e0a6edc44cd1a72f9bbfe29ebae",
+  "kind": "tool.end",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "tool": {
+    "durationMs": 2615,
+    "name": "Bash",
+    "summary": "node --version",
+    "useId": "toolu_01DdEU8Dh9Y4doP5hMJPCiY4",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/007-PreToolUse-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1b37e89f588c78ee1a37ee51a734b1875bfe6abb4bdf9b6eb33038a1e1f7c742",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "tool": {
+    "name": "Bash",
+    "summary": "node -e",
+    "useId": "toolu_01U8hrDRuEpb1Js9h52kYZhv",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/008-PermissionRequest-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "bb7f3d887ca776840088294c12db7eb06aa4e3b2a86b185b2a88ba1316bc6575",
+  "kind": "permission.request",
+  "permission": {
+    "requestId": "bb7f3d887ca776840088294c12db7eb06aa4e3b2a86b185b2a88ba1316bc6575",
+    "summary": "node -e",
+    "toolName": "Bash",
+  },
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/009-Notification-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "c05a5e4fe4cabac9265c819b8451dca22f8a1a2f8a59a4058c6aa904f6b14423",
+  "kind": "notification",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "text": "Claude needs your permission",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/010-PostToolUseFailure-Bash-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "753c39763ef0355d9c386ea1372af7d2f0398f59647ffc9db8deca53d8376275",
+  "kind": "tool.fail",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "text": "Exit code 3",
+  "tool": {
+    "durationMs": 342,
+    "name": "Bash",
+    "summary": "node -e",
+    "useId": "toolu_01U8hrDRuEpb1Js9h52kYZhv",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/011-Stop-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "b6c7eb5182e6063b76026d1e850db8df6b346281652420f315001830a11143a2",
+  "kind": "turn.stop",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "text": "done. Node is v22.19.0, and the second command exited with code 3 as expected.",
+  "v": 1,
+}
+`;
+
+exports[`contract pc2/013-SessionEnd-exec.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "f4f53f60dea74651e3e3bdfc49ffccae2aa99c133cd6475fa90a97e3a0f673be",
+  "kind": "session.end",
+  "repo": "agent-office",
+  "sessionId": "2a64f644-094b-451e-a51c-0280d2a37d7d",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/01-session-start.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "be202a8726f7d50bdf38083c380ec154b1f636abd124547a149078bc4de7870b",
+  "kind": "session.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/02-user-prompt-submit.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "50da42b99742f25a8295b682f79c7fc1ae3e7fec1855c98344fa2c0f3fd6a673",
+  "kind": "prompt.submit",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "Ask the architect to review the plan, then have the tester run the tests.",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/03-pre-tool-use-agent-main.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "b392da9cff2b38b88261a8f18531589dec724af72205bb7c12efa4fe28714465",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Agent",
+    "summary": "architect: Review the build plan",
+    "useId": "toolu_01AGENT",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/04-subagent-start-architect.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-arch01",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9f2a31ddd9badcdb4f1119e46cae11f3270a49f6fb8cdf834064fef605fdfd62",
+  "kind": "agent.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/05-pre-tool-use-read-architect.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-arch01",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "004375c0b307031ec800298c3ed8302664c46b278103bd319055ab19f028f642",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Read",
+    "summary": "docs/build-plan.md",
+    "useId": "toolu_01READ",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/06-post-tool-use-read-architect.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-arch01",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "c19a392d967e72d28aeea1af5606c24f26b2be8a07de8b59d556083c816f4598",
+  "kind": "tool.end",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "durationMs": 7,
+    "name": "Read",
+    "summary": "docs/build-plan.md",
+    "useId": "toolu_01READ",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/07-pre-tool-use-grep-architect.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-arch01",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "064316bb898979e30de5c418af6bdd1f45055973b50e58480f3b9272e53c4043",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Grep",
+    "summary": "DECISION REQUIRED",
+    "useId": "toolu_01GREP",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/08-pre-tool-use-glob-main.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "cb3a7ef516f2ce99d712b1654be0d5b953945bb4a923610914370a93e548eafe",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Glob",
+    "summary": "packages/**/*.ts",
+    "useId": "toolu_01GLOB",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/09-pre-tool-use-bash-tester.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-test01",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "8b52756e2073bbac6fea2dfdcf0ed9861ebccae7ceea39d5e6779d12445f1a90",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Bash",
+    "summary": "npm test",
+    "useId": "toolu_01BASH",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/10-post-tool-use-failure-bash-tester.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-test01",
+    "agentType": "tester",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "330d6b432f54d1bcf8add833e2ff74d4325462d0a106952dc6d5709e406ba48d",
+  "kind": "tool.fail",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "Exit code 1",
+  "tool": {
+    "durationMs": 4187,
+    "name": "Bash",
+    "summary": "npm test",
+    "useId": "toolu_01BASH",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/11-pre-tool-use-edit-coder-windows.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-code01",
+    "agentType": "coder",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "c9bb44c341a2cd86da5983e045d308faabaf42c1061f0ce12ffd8df7845bbe10",
+  "kind": "tool.start",
+  "repo": "portfolio",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Edit",
+    "summary": "data/about.ts",
+    "useId": "toolu_01EDIT",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/12-pre-tool-use-write-coder.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-code01",
+    "agentType": "coder",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1d247f20431554adf7692b8e109b8f522775fa457fcede0a2157e85e768f3406",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "Write",
+    "summary": "README.md",
+    "useId": "toolu_01WRITE",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/13-pre-tool-use-webfetch.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "5fa669e403c82c35ce146c4672756628db7b3e10447277cccd60b2dcda4ea640",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "WebFetch",
+    "summary": "code.claude.com",
+    "useId": "toolu_01FETCH",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/14-pre-tool-use-websearch.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1deaebc48f8c4b3ef4a76bbee622577de1120e8283e9c8f7caa7505796a33134",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "WebSearch",
+    "summary": "pixijs isometric depth sorting",
+    "useId": "toolu_01SEARCH",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/15-pre-tool-use-mcp.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "7e70d271d4e58727a80d3689bd86ba5ee2b7cdb88b4639a19065439b90eeb043",
+  "kind": "tool.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "mcp__memory__create_entities",
+    "summary": "",
+    "useId": "toolu_01MCP",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/16-pre-tool-use-powershell.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "1da697df9c38c5e276f54574739a0aa5899c80a14b50bbfacb966c41399ec029",
+  "kind": "tool.start",
+  "repo": "agent-office",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "name": "PowerShell",
+    "summary": "Get-ChildItem -Recurse",
+    "useId": "toolu_01PWSH",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/17-permission-request-bash.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "05d890a1c6ebaa03cc6c294f4b6dcb91bf3ec640e0b5a510b98b4d3164270e26",
+  "kind": "permission.request",
+  "permission": {
+    "requestId": "05d890a1c6ebaa03cc6c294f4b6dcb91bf3ec640e0b5a510b98b4d3164270e26",
+    "summary": "rm -rf",
+    "toolName": "Bash",
+  },
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/18-notification-permission-prompt.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "7c6dfa92753b11a8c08194529ec5b97a0ecdce98465e5dded1f9ff457a94bef3",
+  "kind": "notification",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "Claude needs your permission to use Bash",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/19-subagent-stop-architect.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-arch01",
+    "agentType": "architect",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "ea4a5e82fecd3c265cc5a25b3e0c2a294497a30d93e68208588beb084ca8e810",
+  "kind": "agent.stop",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "Plan reviewed. Found 3 open questions for the Product Owner.",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/20-subagent-start-explore.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": "agent-expl01",
+    "agentType": "Explore",
+    "kind": "subagent",
+  },
+  "emittedAt": 1760000000000,
+  "id": "a6eca9bb72728f614cb6753ea1e207cf28304394f48245616c6a2e2495c6b663",
+  "kind": "agent.start",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/22-post-tool-use-agent-main.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "fc1359223d2d368c167656121eeb2739d82671a01d7217b0fb55d691407f5464",
+  "kind": "tool.end",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "tool": {
+    "durationMs": 48230,
+    "name": "Agent",
+    "summary": "architect: Review the build plan",
+    "useId": "toolu_01AGENT",
+  },
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/23-stop.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "9fe9ac21e14751c14f50e3e1379382966f0e46112eaa211868ab17d46ee735d4",
+  "kind": "turn.stop",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "Done. The architect reviewed the plan and the tester ran the suite.",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/24-stop-failure.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "c9352e595daca671186c149ba42437311f0202e9cfd6016aae4312f496160bae",
+  "kind": "turn.error",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "text": "rate_limit: API Error: Rate limit reached",
+  "v": 1,
+}
+`;
+
+exports[`contract provisional/25-session-end.json > normalizes to the expected OfficeEvent (or null) 1`] = `
+{
+  "actor": {
+    "agentId": null,
+    "agentType": null,
+    "kind": "main",
+  },
+  "emittedAt": 1760000000000,
+  "id": "3c6e8566c463790bd655ae7eef9c4406af897fb222e960aee19cb9f493efde92",
+  "kind": "session.end",
+  "repo": "my-project",
+  "sessionId": "abc123",
+  "source": "local",
+  "v": 1,
+}
+`;

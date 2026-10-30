@@ -1,0 +1,46 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 43,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2\\scratchpad",
+    "prompt_id": "87fcc95b-c5ac-45bb-9b2a-ef3e4eb65e10",
+    "permission_mode": "auto",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "Stop",
+    "stop_hook_active": false,
+    "last_assistant_message": "Architect's done. Waiting on the tester.",
+    "background_tasks": [
+      {
+        "id": "a95ded7a9e1d0e9db",
+        "type": "subagent",
+        "status": "running",
+        "description": "Run two node commands",
+        "agent_type": "tester"
+      }
+    ],
+    "session_crons": []
+  }
+}

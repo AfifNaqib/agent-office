@@ -1,0 +1,29 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#match-mcp-tools",
+  "_notes": "mcp_server object requires Claude Code v2.1.274+ per docs.",
+  "payload": {
+    "session_id": "abc123",
+    "prompt_id": "550e8400-e29b-41d4-a716-446655440000",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "permission_mode": "default",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "mcp__memory__create_entities",
+    "tool_input": {
+      "entities": [
+        {
+          "name": "private note",
+          "observations": [
+            "MCP INPUT MUST NOT LEAVE THE MACHINE"
+          ]
+        }
+      ]
+    },
+    "mcp_server": {
+      "name": "memory",
+      "source": "user"
+    },
+    "tool_use_id": "toolu_01MCP"
+  }
+}

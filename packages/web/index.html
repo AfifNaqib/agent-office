@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Office</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="app">
+      <main id="office" aria-label="Office"></main>
+      <aside id="panel" aria-label="Sessions and feed">
+        <h1 class="sr-only">Agent Office</h1>
+        <div id="status" role="status"></div>
+        <a id="relogin" href="/" hidden>Log in again</a>
+        <nav id="lobby" aria-label="Sessions"></nav>
+        <ol id="feed" aria-label="Feed" tabindex="0"></ol>
+        <div id="announce" class="sr-only" aria-live="polite"></div>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

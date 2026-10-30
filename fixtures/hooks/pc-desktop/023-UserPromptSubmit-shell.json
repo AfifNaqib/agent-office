@@ -1,0 +1,32 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "shell",
+    "node": "v22.19.0",
+    "bootMs": 29,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": false,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "980db776-b1e9-42d5-95ad-64800715e88d",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d\\scratchpad",
+    "prompt_id": "fe271e37-c425-4f53-a41d-02fe1ba3f935",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>a8c022657563c20d9</task-id>\n<tool-use-id>toolu_016JApTvSCqePjwgZRN3F8Rt</tool-use-id>\n<output-file>~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\980db776-b1e9-42d5-9…"
+  }
+}

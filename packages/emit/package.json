@@ -1,0 +1,15 @@
+{
+  "name": "@agent-office/emit",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Hook script: reads Claude Code hook JSON on stdin, normalizes it with core and POSTs a scrubbed OfficeEvent. Built to one dependency-free file.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@agent-office/core": "*"
+  }
+}

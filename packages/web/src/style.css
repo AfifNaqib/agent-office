@@ -1,0 +1,38 @@
+/* Page styles (was an inline <style> in index.html; moved for the relay CSP style-src 'self', V1-05 R-1). */
+:root { --bg: #0a0a0b; --fg: #f2f2f2; --dim: #8a8a90; --line: #222226; --red: #ff2d2d; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 13px/1.4 ui-monospace, Consolas, monospace; }
+#app { display: flex; height: 100%; }
+#office { flex: 1; min-width: 0; position: relative; }
+#office canvas { display: block; image-rendering: pixelated; }
+#panel { width: 380px; display: flex; flex-direction: column; border-left: 1px solid var(--line); min-height: 0; }
+#status { padding: 10px 14px; letter-spacing: 1px; border-bottom: 1px solid var(--line); }
+#lobby { display: flex; flex-direction: column; gap: 2px; padding: 8px; border-bottom: 1px solid var(--line); max-height: 30%; overflow-y: auto; }
+.session { display: flex; gap: 8px; align-items: baseline; background: none; color: var(--fg); border: 1px solid transparent; font: inherit; text-align: left; padding: 6px 8px; cursor: pointer; }
+.session[aria-pressed='true'] { border-color: var(--fg); }
+.session:focus-visible, a:focus-visible, #feed:focus-visible { outline: 2px solid var(--red); outline-offset: 1px; }
+.session .badge { border: 1px solid var(--dim); padding: 0 4px; font-size: 11px; }
+.session .repo { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session .meta, .empty { color: var(--dim); }
+.session.follow { color: var(--dim); }
+#feed { list-style: none; margin: 0; padding: 8px 14px; overflow-y: auto; flex: 1; min-height: 0; }
+.item { display: grid; grid-template-columns: auto auto 1fr; gap: 0 8px; padding: 3px 0; word-break: break-word; }
+.item .at { color: var(--dim); }
+.item .who { font-weight: bold; }
+.item.prompt .text { color: var(--fg); font-weight: bold; }
+.item.error .text { color: var(--red); }
+.item.tool .text, .item.group .text, .item.session .text, .item.run .text { color: #c8c8cc; }
+.card { grid-column: 1 / -1; border: 1px solid var(--dim); padding: 6px 8px; margin-top: 4px; }
+.card.pending { border-color: var(--red); }
+.card-status { font-weight: bold; }
+.card.pending .card-status { color: var(--red); }
+.card-hint { color: var(--dim); display: block; }
+a.card-hint { color: var(--fg); }
+#relogin:not([hidden]) { display: block; padding: 6px 14px; color: var(--red); border-bottom: 1px solid var(--line); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 768px) {
+  #app { flex-direction: column; }
+  #office { flex: none; height: 40vh; }
+  #panel { width: auto; flex: 1; border-left: 0; border-top: 1px solid var(--line); }
+  #lobby { flex-direction: row; overflow-x: auto; max-height: none; }
+  .session { flex: none; }
+}

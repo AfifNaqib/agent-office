@@ -1,0 +1,22 @@
+{
+  "name": "@agent-office/bridge",
+  "version": "0.0.0",
+  "private": true,
+  "description": "PC bridge: receives hook events on 127.0.0.1, stores 7 days of them and fans them out to the local UI.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs && node dist/agent-office-bridge.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@agent-office/core": "*",
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.13",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.2"
+  }
+}

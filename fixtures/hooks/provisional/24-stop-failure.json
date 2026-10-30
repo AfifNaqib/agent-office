@@ -1,0 +1,13 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#stopfailure-input",
+  "payload": {
+    "session_id": "abc123",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "/home/user/my-project",
+    "hook_event_name": "StopFailure",
+    "error": "rate_limit",
+    "error_details": "429 Too Many Requests",
+    "last_assistant_message": "API Error: Rate limit reached"
+  }
+}

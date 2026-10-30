@@ -1,0 +1,41 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 40,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "96f2a5f6-faa7-4d67-a443-ed835d571ed2",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\96f2a5f6-faa7-4d67-a443-ed835d571ed2\\scratchpad",
+    "prompt_id": "87fcc95b-c5ac-45bb-9b2a-ef3e4eb65e10",
+    "permission_mode": "auto",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Agent",
+    "tool_input": {
+      "description": "Run two node commands",
+      "prompt": "Using the Bash tool, run `node --version`, then run `node -e \"process.exit(3)\"` (this second one fails on purpose with exit code 3 — that is expected, not a bug). Report briefly: the node version out…",
+      "subagent_type": "tester"
+    },
+    "tool_use_id": "toolu_01MABYKRSqnS7SHRpBpzHTsy"
+  }
+}

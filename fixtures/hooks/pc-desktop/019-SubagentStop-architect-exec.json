@@ -1,0 +1,49 @@
+{
+  "_observed": "OBSERVED – exported from an S2 capture (win32), scrubbed",
+  "_capture": {
+    "platform": "win32",
+    "form": "exec",
+    "node": "v22.19.0",
+    "bootMs": 33,
+    "env": {
+      "CLAUDE_CODE_REMOTE_SESSION_ID": false,
+      "CLAUDE_CODE_REMOTE": false,
+      "CLAUDE_PROJECT_DIR": true,
+      "CLAUDE_CODE_ENTRYPOINT": true,
+      "CLAUDE_EFFORT": true,
+      "AGENT_OFFICE_RUN_ID": false,
+      "AGENT_OFFICE_RELAY_URL": false,
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false
+    },
+    "remoteSessionIdShape": null,
+    "projectDirBasename": "agent-office"
+  },
+  "payload": {
+    "session_id": "980db776-b1e9-42d5-95ad-64800715e88d",
+    "transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d.jsonl",
+    "cwd": "C:\\Claude\\agent-office",
+    "scratchpad_dir": "~\\AppData\\Local\\Temp\\claude\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d\\scratchpad",
+    "prompt_id": "fe271e37-c425-4f53-a41d-02fe1ba3f935",
+    "permission_mode": "default",
+    "agent_id": "a8c022657563c20d9",
+    "agent_type": "architect",
+    "effort": {
+      "level": "medium"
+    },
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_transcript_path": "~\\.claude\\projects\\C--Claude-agent-office\\980db776-b1e9-42d5-95ad-64800715e88d\\subagents\\agent-a8c022657563c20d9.jsonl",
+    "last_assistant_message": "- Agent Office is a private visualizer for your Claude Code agent team. The overview is in `CLAUDE.md` and the approved plan is `docs/build-plan.md`.\n- It needs Node 22.13+ and npm. The npm scripts c…",
+    "background_tasks": [
+      {
+        "id": "a8c022657563c20d9",
+        "type": "subagent",
+        "status": "running",
+        "description": "Read README.md",
+        "agent_type": "architect"
+      }
+    ],
+    "session_crons": []
+  }
+}

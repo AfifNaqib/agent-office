@@ -1,0 +1,23 @@
+{
+  "_provisional": "PROVISIONAL – from docs, not observed",
+  "_source": "https://code.claude.com/docs/en/hooks.md#edit",
+  "_notes": "Windows paths arrive with backslashes (documented under PreToolUse input).",
+  "payload": {
+    "session_id": "abc123",
+    "prompt_id": "550e8400-e29b-41d4-a716-446655440000",
+    "transcript_path": "/home/user/.claude/projects/-home-user-my-project/abc123.jsonl",
+    "cwd": "C:\\Claude\\portfolio",
+    "permission_mode": "default",
+    "agent_id": "agent-code01",
+    "agent_type": "coder",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "C:\\Claude\\portfolio\\src\\data\\about.ts",
+      "old_string": "original text",
+      "new_string": "replacement text",
+      "replace_all": false
+    },
+    "tool_use_id": "toolu_01EDIT"
+  }
+}
